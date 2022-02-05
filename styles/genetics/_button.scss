@@ -4,6 +4,7 @@
   outline: none;
   cursor: pointer;
   border: 1px solid $blueLight;
+  padding: 2vh;
   background-image: linear-gradient(45deg, $blueLight 40%, $blueDarker 40%);
   &:hover {
     border: 1px solid $blueDarker;

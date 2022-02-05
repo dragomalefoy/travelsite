@@ -8,8 +8,9 @@ section.explore-m {
   @include columns;
   @include bg-reset;
   background-image: url(/images/faded-bg.png);
-  height: 66vh;
   width: 100vw;
+  height: 85vh;
+  margin-bottom: 5vh;
   div.cont-pitch {
     @include full;
     grid-column: 1 / span 6;
@@ -54,6 +55,11 @@ div.cont-img-m {
   justify-content: space-between;
   height: 30vh;
   width: 40%;
+  justify-content: space-evenly;
+  height: 66vh;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-top: 5vh;
   .img1-explore {
     object-fit: cover;
   }
@@ -70,6 +76,9 @@ img.img-ex {
 section.links-m {
   height: 33vh;
   @include columns;
+  margin-bottom: 2vh;
+
+  ///// curved lines////
   div.father-lines-m {
     grid-column: 3 / span 8;
     position: sticky;
@@ -93,6 +102,7 @@ section.links-m {
   }
 }
 
+////icon links////
 div.father-links-m {
   grid-column: 1 / span 12;
   display: flex;
@@ -116,4 +126,68 @@ div.father-links-m {
       font-size: 8vh;
     }
   }
+}
+
+//////////////// third section //////////
+section.booking-m {
+  @include bg-reset;
+  height: 53vh;
+  width: 100vw;
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  &.house {
+    background-image: url(/images/modern-house-bg.jpg);
+    flex-direction: row;
+  }
+  &.cliff {
+    background-image: url(/images/background-cliff.png);
+    flex-direction: row-reverse;
+  }
+  div.cont-book {
+    width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    div.text-book {
+      opacity: 0.9;
+      margin: 0;
+      padding: 3vh;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: flex-start;
+      background-color: $grayDark;
+    }
+  }
+}
+
+////////
+section.review-m {
+  @include bg-reset;
+  background-color: $grayDark;
+  @include viewp;
+  div.cont-review {
+    @include center;
+    width: 100%;
+    div.father-card-r {
+      width: 80%;
+      @include center;
+      img.dude {
+        width: 20vw;
+        height: 15vh;
+        object-fit: contain;
+      }
+      div.text-card-r {
+        @include center;
+      }
+    }
+  }
+}
+h4 {
+  @include h-4;
 }

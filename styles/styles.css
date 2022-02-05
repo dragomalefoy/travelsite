@@ -126,8 +126,9 @@ section.explore-m {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(/images/faded-bg.png);
-  height: 66vh;
   width: 100vw;
+  height: 85vh;
+  margin-bottom: 5vh;
 }
 section.explore-m div.cont-pitch {
   width: 100%;
@@ -171,6 +172,7 @@ button.button {
   outline: none;
   cursor: pointer;
   border: 1px solid #5474fd;
+  padding: 2vh;
   background-image: linear-gradient(45deg, #5474fd 40%, #496bfe 40%);
   grid-row: 7/span 1;
   width: 40%;
@@ -196,6 +198,11 @@ div.cont-img-m {
   justify-content: space-between;
   height: 30vh;
   width: 40%;
+  justify-content: space-evenly;
+  height: 66vh;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-top: 5vh;
 }
 div.cont-img-m .img1-explore {
   -o-object-fit: cover;
@@ -218,6 +225,7 @@ section.links-m {
   grid-template-columns: repeat(12, 4.5vw);
   -moz-column-gap: 2vw;
        column-gap: 2vw;
+  margin-bottom: 2vh;
 }
 section.links-m div.father-lines-m {
   grid-column: 3/span 8;
@@ -269,6 +277,92 @@ div.father-links-m div.icon-text i.far.fa-check-circle {
 }
 div.father-links-m div.icon-text i.far.fa-thumbs-up {
   font-size: 8vh;
+}
+
+section.booking-m {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 53vh;
+  width: 100vw;
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+section.booking-m.house {
+  background-image: url(/images/modern-house-bg.jpg);
+  flex-direction: row;
+}
+section.booking-m.cliff {
+  background-image: url(/images/background-cliff.png);
+  flex-direction: row-reverse;
+}
+section.booking-m div.cont-book {
+  width: 50%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+}
+section.booking-m div.cont-book div.text-book {
+  opacity: 0.9;
+  margin: 0;
+  padding: 3vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: #333333;
+}
+
+section.review-m {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #333333;
+  width: 100vw;
+  height: 100vh;
+}
+section.review-m div.cont-review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  width: 100%;
+}
+section.review-m div.cont-review div.father-card-r {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+section.review-m div.cont-review div.father-card-r img.dude {
+  width: 20vw;
+  height: 15vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+section.review-m div.cont-review div.father-card-r div.text-card-r {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+h4 {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.7vw;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 nav.nav-h {
