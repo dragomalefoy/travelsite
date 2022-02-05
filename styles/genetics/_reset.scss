@@ -1,9 +1,25 @@
 @mixin body_reset {
-    margin: 0;
-    padding: 0;
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
-@mixin list-reset {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+
+@mixin bg-reset {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin list_reset {
+  list-style: none;
+}
+
+@mixin link_reset {
+  cursor: pointer;
+  text-decoration: none;
 }

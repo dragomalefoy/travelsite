@@ -1,1 +1,33 @@
-@use "../genetics/metric" as *;
+// storage of mixins for flex and grid //
+///
+
+// center flexbox//
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+//// column width = 0.036% of body width, 4.5 vw//
+// placement center//
+///// gap = 0.016% of width //
+// total rows = 12 //
+@mixin columns {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(12, 4.5vw);
+  gap: 2vw;
+}
+
+///// row height = auto height//
+// placement stretch//
+///// gap =  of height //
+// total rows = 6 //
+@mixin rows {
+  display: grid;
+  grid-template-rows: repeat(12, 1fr);
+  gap: 2vh;
+}

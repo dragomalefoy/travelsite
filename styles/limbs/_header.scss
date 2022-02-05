@@ -1,1 +1,50 @@
-@use "../genetics" as *;
+@use "../genetics/" as *;
+
+header {
+  @include viewp;
+  @include bg-reset;
+  background-image: url(/images/header-bg.jpg);
+  section.section-h {
+    @include full;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    .centered-h {
+      @include center;
+      min-height: 30%;
+    }
+  }
+}
+
+div.title-h {
+  @include center;
+  min-width: 60%;
+  min-height: 60%;
+}
+h1 {
+  @include h-1;
+}
+
+h3 {
+  @include h-3;
+}
+
+form.form-search {
+  input.input-search {
+    @include p-graph;
+    letter-spacing: 0.3vw;
+  }
+
+  button.button-search {
+    @include form-btn;
+  }
+}
+
+div.scroll-h {
+  a.text-scroll {
+    @include p-graph;
+    letter-spacing: 0.3vw;
+  }
+}

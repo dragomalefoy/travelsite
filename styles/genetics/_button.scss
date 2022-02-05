@@ -1,1 +1,25 @@
-@use "../genetics/colors" as *;
+@mixin btn {
+  outline: none;
+  cursor: pointer;
+  border: 1px solid $blueLight;
+  background-image: linear-gradient(45deg, $blueLight 40%, $blueDarker 40%);
+
+  &:hover {
+    border: 1px solid $blueDarker;
+    background-image: linear-gradient(45deg, $blueDarker 40%, $blueDarker 40%);
+  }
+}
+
+@mixin form-btn {
+  width: 23%;
+  height: 100%;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $blueLight;
+  &:hover {
+    border: 2px solid white;
+    background-color: $blueDarker;
+  }
+}

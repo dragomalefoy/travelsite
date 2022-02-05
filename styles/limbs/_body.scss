@@ -1,1 +1,8 @@
 @use "../genetics" as *;
+
+body {
+  @include body_reset;
+  background-color: $grayDark;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
