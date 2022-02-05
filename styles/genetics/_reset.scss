@@ -15,11 +15,11 @@
   background-size: cover;
 }
 
-@mixin list_reset {
+@mixin list-reset {
   list-style: none;
 }
 
-@mixin link_reset {
+@mixin link-reset {
   cursor: pointer;
   text-decoration: none;
 }

@@ -1,1 +1,43 @@
 @use "../genetics" as *;
+
+nav.nav-h {
+  height: 10vh;
+  width: 100vw;
+  background-color: $blueLight;
+}
+
+div.cont-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  @include full;
+  div.logo-nav {
+    a.logo-text {
+      @include logo;
+      @include link-reset;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: nowrap;
+      flex-direction: row;
+    }
+  }
+}
+div.list-cont-nav {
+  width: 50%;
+  ul.list-nav {
+    @include list-reset;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    li a {
+      @include a-link;
+      @include link-reset;
+      height: 100%;
+    }
+  }
+}

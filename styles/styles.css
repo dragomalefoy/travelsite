@@ -36,6 +36,7 @@ header section.section-h .centered-h {
   flex-wrap: nowrap;
   flex-direction: column;
   min-height: 30%;
+  width: 100%;
 }
 
 div.title-h {
@@ -46,6 +47,8 @@ div.title-h {
   flex-direction: column;
   min-width: 60%;
   min-height: 60%;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -67,6 +70,14 @@ h3 {
   letter-spacing: 1vw;
 }
 
+form.form-search {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
 form.form-search input.input-search {
   color: white;
   font-family: "Josefin Sans", sans-serif;
@@ -74,9 +85,22 @@ form.form-search input.input-search {
   font-style: normal;
   font-weight: normal;
   letter-spacing: 0.3vw;
-}
-form.form-search button.button-search i.icon-search {
+  width: 80%;
   height: 100%;
+}
+form.form-search button.button-search {
+  width: 20%;
+  height: 100%;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5474fd;
+  padding: 1vw;
+}
+form.form-search button.button-search:hover {
+  border: 2px solid white;
+  background-color: #496bfe;
 }
 
 div.scroll-h a.text-scroll {
@@ -87,7 +111,59 @@ div.scroll-h a.text-scroll {
   font-weight: normal;
   letter-spacing: 0.3vw;
 }
-div.scroll-h a.text-scroll i.icon-scroll {
-  height: 30%;
-  width: 30%;
+
+nav.nav-h {
+  height: 10vh;
+  width: 100vw;
+  background-color: #5474fd;
+}
+
+div.cont-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+div.cont-nav div.logo-nav a.logo-text {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.3vw;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+div.list-cont-nav {
+  width: 50%;
+}
+div.list-cont-nav ul.list-nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+div.list-cont-nav ul.list-nav li a {
+  color: white;
+  font-family: "Aleo", serif;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.3vw;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  height: 100%;
 }/*# sourceMappingURL=styles.css.map */

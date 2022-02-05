@@ -14,6 +14,7 @@ header {
     .centered-h {
       @include center;
       min-height: 30%;
+      width: 100%;
     }
   }
 }
@@ -22,6 +23,8 @@ div.title-h {
   @include center;
   min-width: 60%;
   min-height: 60%;
+  margin: 0;
+  padding: 0;
 }
 h1 {
   @include h-1;
@@ -32,9 +35,17 @@ h3 {
 }
 
 form.form-search {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
   input.input-search {
     @include p-graph;
     letter-spacing: 0.3vw;
+    width: 80%;
+    height: 100%;
   }
 
   button.button-search {
