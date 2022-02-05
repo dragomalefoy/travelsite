@@ -112,10 +112,171 @@ div.scroll-h a.text-scroll {
   letter-spacing: 0.3vw;
 }
 
+main {
+  width: 100vw;
+}
+
+section.explore-m {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(12, 4.5vw);
+  -moz-column-gap: 2vw;
+       column-gap: 2vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/images/faded-bg.png);
+  height: 66vh;
+  width: 100vw;
+}
+section.explore-m div.cont-pitch {
+  width: 100%;
+  height: 100%;
+  grid-column: 1/span 6;
+  display: grid;
+  grid-template-rows: repeat(12, 1fr);
+  gap: 2vh;
+  justify-items: stretch;
+  width: 100%;
+}
+
+h2 {
+  color: white;
+  font-family: "Aleo", serif;
+  font-size: 2.5vw;
+  font-style: normal;
+  font-weight: normal;
+}
+h2.choose {
+  grid-row: 4/span 1;
+  margin: 0;
+  padding: 0;
+  text-align: start;
+}
+
+p {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2vw;
+  font-style: normal;
+  font-weight: normal;
+}
+p.pitch {
+  grid-row: 5/span 2;
+  padding: 0;
+  margin: 0;
+}
+
+button.button {
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #5474fd;
+  background-image: linear-gradient(45deg, #5474fd 40%, #496bfe 40%);
+  grid-row: 7/span 1;
+  width: 40%;
+}
+button.button:hover {
+  border: 1px solid #496bfe;
+  background-image: linear-gradient(45deg, #496bfe 40%, #496bfe 40%);
+}
+
+a.link {
+  color: white;
+  font-family: "Aleo", serif;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.3vw;
+  text-transform: uppercase;
+}
+
+div.cont-img-m {
+  grid-column: 8/span 5;
+  display: flex;
+  justify-content: space-between;
+  height: 30vh;
+  width: 40%;
+}
+div.cont-img-m .img1-explore {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+div.cont-img-m .img2-explore {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+img.img-ex {
+  width: 100%;
+  height: 100%;
+}
+
+section.links-m {
+  height: 33vh;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(12, 4.5vw);
+  -moz-column-gap: 2vw;
+       column-gap: 2vw;
+}
+section.links-m div.father-lines-m {
+  grid-column: 3/span 8;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  height: 11vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 5vh;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+section.links-m div.father-lines-m div.curved-line {
+  width: 100%;
+  height: 77%;
+  border: solid 3px #999999;
+  border-color: #999999 transparent transparent transparent;
+  border-radius: 50%/100px 100px 0 0;
+  padding: 13px;
+  opacity: 0.4;
+}
+
+div.father-links-m {
+  grid-column: 1/span 12;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+div.father-links-m div.icon-text {
+  color: #5474fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+div.father-links-m div.icon-text.red {
+  color: tomato;
+}
+div.father-links-m div.icon-text i.fas.fa-search {
+  font-size: 8vh;
+}
+div.father-links-m div.icon-text i.far.fa-check-circle {
+  font-size: 8vh;
+}
+div.father-links-m div.icon-text i.far.fa-thumbs-up {
+  font-size: 8vh;
+}
+
 nav.nav-h {
   height: 10vh;
   width: 100vw;
   background-color: #5474fd;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 div.cont-nav {

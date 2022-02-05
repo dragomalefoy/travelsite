@@ -1,1 +1,119 @@
 @use "../genetics" as *;
+
+main {
+  width: 100vw;
+}
+//////////////// first section //////////
+section.explore-m {
+  @include columns;
+  @include bg-reset;
+  background-image: url(/images/faded-bg.png);
+  height: 66vh;
+  width: 100vw;
+  div.cont-pitch {
+    @include full;
+    grid-column: 1 / span 6;
+    @include rows;
+    justify-items: stretch;
+    width: 100%;
+  }
+}
+
+h2 {
+  @include h-2;
+  &.choose {
+    grid-row: 4 / span 1;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+  }
+}
+
+p {
+  @include p-graph;
+  &.pitch {
+    grid-row: 5 / span 2;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+button.button {
+  @include btn;
+  grid-row: 7 / span 1;
+  width: 40%;
+}
+a.link {
+  @include a-link;
+}
+
+// images//
+div.cont-img-m {
+  grid-column: 8 / span 5;
+  display: flex;
+  justify-content: space-between;
+  height: 30vh;
+  width: 40%;
+  .img1-explore {
+    object-fit: cover;
+  }
+  .img2-explore {
+    object-fit: cover;
+  }
+}
+
+img.img-ex {
+  @include full;
+}
+//////////////// second section //////////
+
+section.links-m {
+  height: 33vh;
+  @include columns;
+  div.father-lines-m {
+    grid-column: 3 / span 8;
+    position: sticky;
+    z-index: 1;
+    height: 11vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 5vh;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    div.curved-line {
+      width: 100%;
+      height: 77%;
+      border: solid 3px $grayLight;
+      border-color: $grayLight transparent transparent transparent;
+      border-radius: 50%/100px 100px 0 0;
+      padding: 13px;
+      opacity: 0.4;
+    }
+  }
+}
+
+div.father-links-m {
+  grid-column: 1 / span 12;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  div.icon-text {
+    color: $blueLight;
+    @include center;
+    &.red {
+      color: tomato;
+    }
+    i.fas.fa-search {
+      font-size: 8vh;
+    }
+    i.far.fa-check-circle {
+      font-size: 8vh;
+    }
+    i.far.fa-thumbs-up {
+      font-size: 8vh;
+    }
+  }
+}

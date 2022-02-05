@@ -19,7 +19,7 @@
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(12, 4.5vw);
-  gap: 2vw;
+  column-gap: 2vw;
 }
 
 ///// row height = auto height//
